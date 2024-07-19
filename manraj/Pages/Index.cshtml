@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">calculator</h1>
+
+    <form action="" method="POST">
+    <input type="text" placeholder="Enter Num1" name="num1">
+    <input type="text" placeholder="Enter Num2" name="num2">
+    <br>
+    <br>
+    <input type="submit" value="ADD" name="ADD">
+    <input type="submit" value="Sub" name="Sub">
+    <input type="submit" value="MUL" name="MUL">
+    <input type="submit" value="DIV" name="DIV">
+    <input type="submit" value="SQR" name="SQR">
+    <input type="submit" value="CUB" name="CUB">
+    <input type="submit" value="PWR" name="PWR">
+
+    </form>
+ <br>
+ <br>
+<p>Result:</p>
+
+ <input  type="text" value="@ViewData["result"]" name="result" readonly>
+
+
+    </form>   
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
